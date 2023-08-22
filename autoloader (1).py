@@ -206,7 +206,8 @@ for stream in spark.streams.active:
 
 # COMMAND ----------
 
-
+for stream in spark.streams.active:
+    stream.stop()
 
 # COMMAND ----------
 
